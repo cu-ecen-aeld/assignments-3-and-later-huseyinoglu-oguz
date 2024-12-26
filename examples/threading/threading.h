@@ -20,6 +20,11 @@ struct thread_data{
      * if an error occurred.
      */
     bool thread_complete_success;
+    pthread_t _thread;
+    pthread_mutex_t *_mutex;
+    int _wait_to_obtain_ms;
+    int _wait_to_release_ms;
+
 };
 
 
